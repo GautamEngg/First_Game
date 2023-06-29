@@ -1,4 +1,4 @@
-# Snake Water Gun Game
+# Rock Paper Scissors Game
 
 import random
 
@@ -11,33 +11,33 @@ print(r_number)
 def game_result(sys, player):
     if sys == player:
         return None
-    elif sys == 'S':
-        if player == 'W':
+    elif sys == 'R':
+        if player == 'S':
             return False
-        if player == 'G':
+        if player == 'P':
             return True 
-    elif sys == 'W':
-        if player == 'G':
+    elif sys == 'P':
+        if player == 'R':
             return False
         if player == 'S':
             return True
-    elif sys == 'G':
-        if player == 'S':
+    elif sys == 'S':
+        if player == 'P':
             return False
-        if player == 'W':
+        if player == 'R':
             return True
 
-print("Player1/system Turn: Snake(S) Water(W) or Gun(G)?")
+print("Player1/system Turn: Rock(R) Paper(P) or Scissor(S)?")
 r_number = random.randint(1,3)
 
 if r_number == 1:
-    sys = 'S'
+    sys = 'R'
 elif r_number == 2:
-    sys = 'W'
+    sys = 'P'
 elif r_number == 3:
-    sys = 'G' 
+    sys = 'S' 
 
-player = input("Player/your Turn: Snake(S) Water(W) or Gun(G)?")
+player = input("Player/your Turn: Rock(R) Paper(P) or Scissor(S)?")
 
 a = game_result(sys, player)
 
