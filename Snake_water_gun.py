@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game
-
+# Basic game in python
 import random
 
 # Print any number between 1 to 6
